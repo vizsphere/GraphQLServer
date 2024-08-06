@@ -2,8 +2,7 @@
 
 ## How to use this repo
 
-This repo uses Hot Chocolate open-source GraphQL server for the Microsoft .NET platform https://chillicream.com/docs/hotchocolate/v13 and hot chocolate workshop to craft this code https://github.com/ChilliCream/graphql-workshop
-You can also extend your server using more examples here https://www.apollographql.com/tutorials/intro-hotchocolate/01-overview-setup
+This repository leverages the Hot Chocolate open-source GraphQL server for the Microsoft .NET platform. You can find more information here https://chillicream.com/docs/hotchocolate/v13. The code was crafted using the Hot Chocolate workshop, which is available here https://github.com/ChilliCream/graphql-workshop. Additionally, you can extend your server with more examples from this tutorial. https://www.apollographql.com/tutorials/intro-hotchocolate/01-overview-setup
 
 ### Update local setting / run project locally
 
