@@ -26,6 +26,39 @@ dotnet start
 ```
 The local `graphql server` should be listening on https://localhost:44318/graphql/ 
 
+### Queries / Mutation 
+
+```shell
+ query  getSpeakers {
+    speakers {
+      bio,
+      name,
+      id
+    }
+ }
+```
+ 
+```shell
+ query GetSpeakerNames {
+  speakers {
+    name
+  }
+}
+```
+
+```shell
+mutation AddSpeaker {
+  addSpeaker(input: {
+    name: "tester"
+    bio: "good at unit test"
+    webSite: "http://unittest.test" }) {
+    speaker {
+      id
+    }
+  }
+}
+```
+
 ## Getting Help
 
 This repo is _not regularly monitored_.
