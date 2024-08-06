@@ -16,7 +16,7 @@ builder.Services.AddCors(setup =>
 {
     setup.AddPolicy("dev", options =>
     {
-        options.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:8080")
+        options.WithOrigins("http://localhost:5000")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
