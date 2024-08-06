@@ -12,7 +12,7 @@ dotnet build
 ```shell
 dotnet start
 ```
-The local graphql server should be listening on https://localhost:44318/graphql/ 
+The local `graphql server` should be listening on https://localhost:44318/graphql/ 
 
 ## Getting Help
 
