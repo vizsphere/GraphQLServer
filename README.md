@@ -59,6 +59,25 @@ mutation AddSpeaker {
 }
 ```
 
+Add speaker with variables 
+{
+  "name": "mr bob",
+  "bio": "just bob",
+  "webSite": "bob@bob.com"
+}
+```shell
+mutation AddSpeaker ($name: String!, $bio: String!, $webSite : String!) {
+  addSpeaker(input: {
+    name: $name,
+    bio: $bio,
+    webSite: $webSite }) {
+    speaker {
+      id
+    }
+  }
+}
+```
+
 ## Getting Help
 
 This repo is _not regularly monitored_.
