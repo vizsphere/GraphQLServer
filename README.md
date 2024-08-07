@@ -29,7 +29,7 @@ The local `graphql server` should be listening on https://localhost:44318/graphq
 ### Queries / Mutation 
 
 ```shell
- query  getSpeakers {
+ query  GetSpeakers {
     speakers {
       bio,
       name,
@@ -37,7 +37,19 @@ The local `graphql server` should be listening on https://localhost:44318/graphq
     }
  }
 ```
- 
+
+```shell
+query GetSpeaker($id : Int!) {
+   speaker(id: $id) {
+    id
+    name
+    bio
+    webSite
+  }
+}
+
+```
+
 ```shell
  query GetSpeakerNames {
   speakers {
