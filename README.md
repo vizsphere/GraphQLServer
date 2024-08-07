@@ -78,6 +78,17 @@ mutation AddSpeaker ($name: String!, $bio: String!, $webSite : String!) {
 }
 ```
 
+```shell
+mutation DeleteSpeaker($id: Int!) {
+  deleteSpeaker(id: $id) {
+    speaker {
+      id
+      name
+      bio
+    }
+  }
+}
+```
 ## Getting Help
 
 This repo is _not regularly monitored_.
