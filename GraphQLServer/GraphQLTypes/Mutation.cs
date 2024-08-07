@@ -22,6 +22,23 @@ namespace GraphQLServer.GraphQLTypes
 
             return new AddSpeakerPayload(speaker);
         }
-    }
 
+        [UseApplicationDbContext]
+        public async Task<AddSpeakerPayload> DeleteSpeakerAsync(
+            int id,
+            [ScopedService] ApplicationDbContext context)
+        {
+            var speaker = await context.Speakers.FindAsync(id);
+            if (speaker == null)
+            {
+                return new AddSpeakerPayload(
+                    new UserError("Speaker not found", "SPEAKER_NOT_FOUND"));
+            }
+
+            context.Speakers.Remove(speaker);
+            await context.SaveChangesAsync();
+
+            return new AddSpeakerPayload(speaker);
+        }
+    }
 }
