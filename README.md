@@ -105,4 +105,4 @@ mutation DeleteSpeaker($id: Int!) {
 
 This repo is _not regularly monitored_.
 
-For any questions contact https://vizzon.co.uk/contact/
+For any questions contact https://vizsphere.com/contact/
